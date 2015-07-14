@@ -1,0 +1,9 @@
+<div class="l-container">
+  <h1>Lessons List</h1>
+
+  <% for(var slug in public.lessons._data){ %>
+    <div class="lesson">
+      <%- partial("../_opendrupal/_lessons/" + slug) %>
+    </div>
+  <% }; %>
+</div>
