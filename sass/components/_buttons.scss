@@ -1,0 +1,106 @@
+/**
+ * Rocket Components.
+ * http://hedleysmith.github.io/rocketcomponents/
+ *
+ * 'Buttons' UI component.
+ *
+ * Dependencies:
+ * - rocket/base/colours
+ *
+ */
+
+/**
+ * Configuration options.
+ * For minor overrides, see _theme.scss.
+ */
+$button-border-radius: 3px !default;
+$button-text-color: rgba(0, 0, 0, 0.8) !default;
+
+/**
+ * The button mixin.
+ * Examples:
+ * - @include button(primary, small);
+ */
+
+@mixin button($button-style: plain, $button-size: normal, $background-color: #E6E6E6, $text-color: rgba(0, 0, 0, 0.8)) {
+  transition: all 0.25s ease;
+  border-radius: $button-border-radius;
+  background-color: $background-color;
+  color: $button-text-color;
+  border: 0 none transparent;
+  padding: .75em 2em;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 60%, rgba(0, 0, 0, 0.1));
+    cursor: pointer;
+  }
+  &.disabled,
+  &:disabled {
+    background-image: none;
+    cursor: not-allowed;
+    opacity: 0.7;
+    background-color: #CCC;
+  }
+  &.active, &:active {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  }
+
+  @if $button-style == "primary" {
+    background-color: $colour-primary;
+    color: #FFF;
+    &:visited {
+      color: #FFF;
+    }
+  }
+  @if $button-style == "secondary" {
+    background-color: $colour-secondary;
+    color: #FFF;
+    &:visited {
+      color: #FFF;
+    }
+  }
+  @if $button-style == "positive" {
+    background-color: $colour-positive;
+    color: #FFF;
+  }
+  @if $button-style == "negative" {
+    background-color: $colour-negative;
+  }
+  @if $button-size == "large" {
+    font-size: 1.3em;
+  }
+  @if $button-size == "small" {
+    border-radius: 2px;
+    font-size: 0.8em;
+    padding: .4em 2em;
+  }
+}
+
+.button {
+  @include button();
+}
+
+.button--primary {
+  @include button(primary);
+}
+
+.button--small {
+
+}
+
+.button--large {
+ // @include button-base();
+ // font-size: 1.5em;
+}
+
+.button--positive {
+
+}
+
+.button--negative {
+
+}
+

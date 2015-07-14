@@ -1,0 +1,38 @@
+/**
+ * Rocket Components.
+ * http://hedleysmith.github.io/rocketcomponents/
+ *
+ * 'Colors' base configuration component.
+ *
+ * Dependencies: none
+ *
+ */
+
+// Brand
+$colour-primary: #3aaed8 !default; // Light Blue
+$colour-primary-lighter: mix($colour-primary, #FFF, 80%) !default;
+$colour-primary-darker: mix($colour-primary, #000, 90%) !default;
+
+$colour-secondary: #a53f2b !default; // Dark Red
+$colour-secondary-lighter: mix($colour-secondary, #FFF, 80%) !default;
+$colour-secondary-darker: mix($colour-secondary, #000, 90%) !default;
+
+$colour-accent-1: #adacb5 !default; // Grey
+$colour-accent-2: black !default;
+
+// Utility
+$colour-info: #AAAAAA !default; // Grey
+$colour-warning: #FFDC00 !default; // Yellow
+$colour-positive: #2ECC40 !default; // Green
+$colour-negative: #FF4136 !default; // Red
+
+// Page
+$colour-page-background: #fcfcfc !default;
+$colour-page-background-tinted: #EEE !default;
+$colour-page-background-dark: #001021 !default; // Dark Blue
+$colour-page-background-dark-text: #FFF !default; // Text over $page-background-dark
+
+// Typography
+$text: #222 !default;
+$text-darker: #111 !default;
+$text-lighter: #666 !default;

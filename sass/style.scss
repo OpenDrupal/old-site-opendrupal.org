@@ -1,0 +1,10 @@
+// This base partial includes the rocket CSS library and
+// everything in the spaces folder.
+@import "theme";
+
+@import "rocket";
+
+@import "spaces/global/topbar";
+@import "spaces/global/footer";
+@import "spaces/curriculum/curriculum";
+@import "spaces/homepage/homepage";

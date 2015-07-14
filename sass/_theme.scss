@@ -1,0 +1,18 @@
+// Theme overrides for specific components.
+
+// Component: rocket/utility/animations
+// To disable all animations globally, uncomment the following:
+//$animations-off: 'true';
+
+// Component: rocket/components/button
+$button-border-radius: 5px;
+
+// Component: rocket/base/colours
+$colour-primary: #26a8e0;
+
+// Component: rocket/utility/containers
+$container-normal: 1100px;
+$container-thin: 950px;
+
+// Component:
+$base-font-family: 'Open Sans', 'Helvetica', 'Arial' sans-serif;

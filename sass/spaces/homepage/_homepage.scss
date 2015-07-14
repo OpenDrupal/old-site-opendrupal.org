@@ -1,0 +1,18 @@
+.homepage {
+  &__splash {
+    background-color: #EEE;
+    padding: 2em 0;
+  }
+  &__splash-cta-2 {
+    margin-left: 3em;
+  }
+  &__splash-heading {
+    font-size: 2.5em;
+    max-width: 19em;
+  }
+  &__splash-intro {
+    font-size: 1.2em;
+    font-weight: 200;
+    max-width: 48em;
+  }
+}

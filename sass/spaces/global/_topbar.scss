@@ -1,0 +1,44 @@
+.header {
+  @include clearfix();
+  background-color: $colour-primary;
+  color: #EEE;
+  padding: 1.5em 0 1em 0;
+  a {
+    color: #EEE;
+    &:hover {
+      color: #FFF;
+    }
+  }
+  &__branding {
+    float: left;
+  }
+  &__nav {
+    float: right;
+  }
+}
+
+.logo {
+  max-width: 260px;
+}
+
+.primary-menu {
+  @include list-horizontal();
+  @include clearfix();
+  font-size: 20px;
+  float: right;
+  margin-bottom: .5em;
+  &__item {
+    margin-left: 1.5em;
+  }
+}
+
+.secondary-menu {
+  @include list-horizontal();
+  @include clearfix();
+  font-weight: 200;
+  float: right;
+  clear: both;
+  &__item {
+    margin-left: 1em;
+  }
+}
