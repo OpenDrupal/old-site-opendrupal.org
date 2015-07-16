@@ -11,8 +11,21 @@ $button-border-radius: 5px;
 $colour-primary: #26a8e0;
 
 // Component: rocket/utility/containers
-$container-normal: 1100px;
+$container-normal: 1300px;
 $container-thin: 950px;
 
 // Component:
 $base-font-family: 'Open Sans', 'Helvetica', 'Arial' sans-serif;
+
+// Foundation: global
+$include-html-global-classes: false;
+$medium-up: 700px;
+
+// Foundation: tabs
+// $tabs-navigation-bg-color: #CCC;
+// $tabs-navigation-active-bg-color: #FFF;
+// $tabs-navigation-font-color: #000;
+// $tabs-navigation-font-family: $base-font-family;
+// $tabs-content-padding: .5em;
+// $tabs-navigation-padding: .5em;
+// $tabs-content-margin-bottom: .5em;

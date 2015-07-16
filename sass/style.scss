@@ -1,10 +1,19 @@
-// This base partial includes the rocket CSS library and
-// everything in the spaces folder.
-@import "theme";
+// This base partial includes CSS libraries and custom styling
+// for this site.
 
+
+// First import Rocket CSS (https://github.com/hedleysmith/rocketcss)
+// with a custom theme settings file to override some defaults.
+@import "theme";
 @import "rocket";
 
+// Import the 'tabs' component from the Foundation CSS framework
+// (https://github.com/zurb/foundation)
+@import "vendor/foundation/foundation/components/tabs";
+
+// Now import site-specific components, organised into 'spaces'.
 @import "spaces/global/topbar";
 @import "spaces/global/footer";
 @import "spaces/curriculum/curriculum";
 @import "spaces/homepage/homepage";
+@import "spaces/lessons/lessons";

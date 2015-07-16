@@ -1,11 +1,28 @@
 {
-  "01_team_processes/01_team_processes.md": {
-     "title": "Team Processes"
+  "overview": {
+     "filepath": "_lessons-overview.md",
+     "title": "Overview"
     },
-  "02_project-setup-toolchain/02_project-setup-toolchain.md": {
-    "title": "Toolchain"
+  "toolchain1": {
+    "filepath": "../_opendrupal/_lessons/02_project-setup-toolchain/02_project-setup-toolchain.md",
+    "title": "Toolchain Pt. 1"
   },
-  "03_toolchain/03_toolchain_project_setup.md": {
-    "title": "Toolchain"
+  "toolchain2": {
+    "filepath": "../_opendrupal/_lessons/03_toolchain/03_toolchain_project_setup.md",
+    "title": "Toolchain Pt. 2"
+  },
+  "site-building-front-end": {
+    "filepath": "../_opendrupal/_lessons/05_site-building-front-end/05_site-building-frontend.md",
+    "title": "Site Building & Front End Development"
+  },
+  "team1": {
+    "filepath": "../_opendrupal/_lessons/06_team/06_team.md",
+    "title": "Agile Development"
+  },
+  "frontend1": {
+    "filepath": "../_opendrupal/_lessons/07_frontend/07_frontend.md",
+    "title": "Front End Development Pt. 1"
   }
+
 }
+
