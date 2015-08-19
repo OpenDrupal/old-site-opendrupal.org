@@ -4,24 +4,39 @@
 // To disable all animations globally, uncomment the following:
 //$animations-off: 'true';
 
+// Component: rocket/base/typography
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$h1-font-size: 2.618 * $base-font-size;
+$h2-font-size: 2.427 * $base-font-size;
+$h3-font-size: 1.618 * $base-font-size;
+$h4-font-size: 1.5 * $base-font-size;
+$h5-font-size: 1 * $base-font-size;
+
 // Component: rocket/components/button
-$button-border-radius: 5px;
+$button-default-border-radius: 5px;
+
+.button {
+  font-weight: 700;
+}
 
 // Component: rocket/base/colours
 $colour-primary: #26a8e0;
 
 // Component: rocket/utility/containers
-$container-normal: 1300px;
+$container-normal: 1200px;
 $container-thin: 950px;
 
 // Component:
 $base-font-family: 'Open Sans', 'Helvetica', 'Arial' sans-serif;
+$heading-font-family: 'Open Sans', 'Helvetica', 'Arial' sans-serif;
 
 // Foundation: global
 $include-html-global-classes: false;
 $medium-up: 700px;
 
-// Foundation: tabs
+// Component: Foundation/Tabs
+$tabs-navigation-padding: .75em;
 // $tabs-navigation-bg-color: #CCC;
 // $tabs-navigation-active-bg-color: #FFF;
 // $tabs-navigation-font-color: #000;
