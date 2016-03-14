@@ -36,6 +36,9 @@ $button-default-transition: all 0.25s ease !default;
 $button-default-text-color: #FFF !default;
 $button-default-background-color: #AAA;
 
+$button-color-light: #FFF;
+$button-color-light-text: #222;
+
 // Button base mixin
 @mixin button-base {
   border: none;
@@ -95,6 +98,14 @@ $button-default-background-color: #AAA;
 
 .button--negative {
   background-color: $colour-negative;
+}
+
+.button--light {
+  background-color: $button-color-light;
+  color: $button-color-light-text
+  &:link, &:visited {
+    color: $button-color-light-text
+  }
 }
 
 

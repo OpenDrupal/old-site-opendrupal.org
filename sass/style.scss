@@ -12,8 +12,12 @@
 @import "vendor/foundation/foundation/components/tabs";
 
 // Now import site-specific components, organised into 'spaces'.
-@import "spaces/global/topbar";
-@import "spaces/global/footer";
-@import "spaces/curriculum/curriculum";
-@import "spaces/homepage/homepage";
-@import "spaces/lessons/lessons";
+@import "pages/global/topbar";
+@import "pages/global/footer";
+@import "pages/global/content-styling";
+@import "pages/curriculum/curriculum";
+@import "pages/homepage/homepage";
+@import "pages/homepage/get-involved";
+@import "pages/lessons/lessons";
+
+@import "overrides";

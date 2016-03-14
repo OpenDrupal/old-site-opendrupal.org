@@ -2,3 +2,4 @@ node_modules
 www/
 sass/.git
 sass/.gitignore
+.DS_Store

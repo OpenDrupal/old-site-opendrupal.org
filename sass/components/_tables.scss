@@ -8,3 +8,44 @@
  *
  */
 
+ $table-border-color: #CCC !default;
+ $table-heading-background: #EEE !default;
+
+ @mixin table-minimal {
+   td, th {
+     padding: .5em;
+     text-align: left;
+     border-top: 1px solid $table-border-color;
+   }
+
+   thead:first-child tr:first-child th,
+   thead:first-child tr:first-child td {
+       border-top: 0 none;
+   }
+ }
+
+ @mixin table-full {
+   border: 1px solid $table-border-color;
+   thead {
+     background-color: $table-heading-background;
+   }
+   td, th {
+     padding: .5em;
+     text-align: left;
+     border-top: 1px solid $table-border-color;
+     border-right: 1px solid $table-border-color;
+   }
+
+ }
+
+ @mixin table-striped {
+   tbody tr:nth-child(2n+1) td,
+   tbody tr:nth-child(2n+1) th {
+       background-color: #F9F9F9;
+   }
+ }
+
+ table {
+   @include table-full;
+   width: 100%;
+ }
